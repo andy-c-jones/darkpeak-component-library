@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 import { Button } from '../atoms/Button';
 
@@ -46,7 +46,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
         ) : (
           <>
             <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <Button type="primary" size="small" onClick={onCreateAccount} label="Sign up" />
           </>
         )}
       </div>
