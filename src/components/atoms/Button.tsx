@@ -21,6 +21,10 @@ interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+  /**
+   * Is the button disabled?
+   */
+  disabled?: boolean;
 }
 
 const sizeMap = {
