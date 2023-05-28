@@ -8,7 +8,7 @@ import Plugin from './assets/plugin.svg';
 import Repo from './assets/repo.svg';
 import StackAlt from './assets/stackalt.svg';
 
-<Meta title="Getting Started/Introduction" />
+<Meta title="Getting Started/Storybook Introduction" />
 
 <style>
   {`
@@ -116,45 +116,98 @@ import StackAlt from './assets/stackalt.svg';
   `}
 </style>
 
-# Welcome to the Dark Peak component library
+# Welcome to Storybook
 
-This Storybook portal is used for building Atoms, Molecules and Organisms for resuse in applications. This helps us build UI components in isolation from an app's business logic, data, and context.
-These **Stories**  can be used for the development and testing as thier parameterisation can be used to configure all possible component states.
+Storybook helps you build UI components in isolation from your app's business logic, data, and context.
+That makes it easy to develop hard-to-reach states. Save these UI states as **stories** to revisit during development, testing, or QA.
 
-This component libary is used as part of a [**component-driven**](https://componentdriven.org) process starting with atomic components with the intent that pages will be built in an React application.
-The aim for pages in an application will be to use the highest level abstractions to build a page (e.g. a set of Organisms). Where more niche UIs exist on pages where reusable Organisms don't need to be created then Molecules can be used. The same is true of Atoms but is should be very rare that Atoms are used directly.
+Browse example stories now by navigating to them in the sidebar.
+View their code in the `stories` directory to learn how they work.
+We recommend building UIs with a [**component-driven**](https://componentdriven.org) process starting with atomic components and ending with pages.
 
-<div className="subheading">Learn</div>
+<div className="subheading">Configure</div>
 
 <div className="link-list">
-  <a className="link-item" href="https://www.justinmind.com/blog/atomic-design/" target="_blank">
-    <img src={Repo} alt="repo" />
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/addons/addon-types"
+    target="_blank"
+  >
+    <img src={Plugin} alt="plugin" />
     <span>
-      <strong>Guide to Atomic Design</strong>
-      Get to grips with the concepts in the design system
+      <strong>Presets for popular tools</strong>
+      Easy setup for TypeScript, SCSS and more.
     </span>
   </a>
   <a
     className="link-item"
-    href="https://tailwindcss.com/docs/"
+    href="https://storybook.js.org/docs/react/configure/webpack"
+    target="_blank"
+  >
+    <img src={StackAlt} alt="Build" />
+    <span>
+      <strong>Build configuration</strong>
+      How to customize webpack and Babel
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/configure/styling-and-css"
     target="_blank"
   >
     <img src={Colors} alt="colors" />
     <span>
-      <strong>Tailwind CSS Documentation</strong>
-      Reference documentation for all the css class you need to style components
+      <strong>Styling</strong>
+      How to load and configure CSS libraries
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/get-started/setup#configure-storybook-for-your-stack"
+    target="_blank"
+  >
+    <img src={Flow} alt="flow" />
+    <span>
+      <strong>Data</strong>
+      Providers and mocking for data libraries
+    </span>
+  </a>
+</div>
+
+<div className="subheading">Learn</div>
+
+<div className="link-list">
+  <a className="link-item" href="https://storybook.js.org/docs" target="_blank">
+    <img src={Repo} alt="repo" />
+    <span>
+      <strong>Storybook documentation</strong>
+      Configure, customize, and extend
     </span>
   </a>
   <a className="link-item" href="https://storybook.js.org/tutorials/" target="_blank">
     <img src={Direction} alt="direction" />
     <span>
-      <strong>Storybook Tutorials</strong>
-      Find out Storybook Best Practices
+      <strong>In-depth guides</strong>
+      Best practices from leading teams
+    </span>
+  </a>
+  <a className="link-item" href="https://github.com/storybookjs/storybook" target="_blank">
+    <img src={Code} alt="code" />
+    <span>
+      <strong>GitHub project</strong>
+      View the source and add issues
+    </span>
+  </a>
+  <a className="link-item" href="https://discord.gg/storybook" target="_blank">
+    <img src={Comments} alt="comments" />
+    <span>
+      <strong>Discord chat</strong>
+      Chat with maintainers and the community
     </span>
   </a>
 </div>
 
 <div className="tip-wrapper">
   <span className="tip">Tip</span>Edit the Markdown in{' '}
-  <code>stories/Introduction.mdx</code>
+  <code>stories/Introduction.stories.mdx</code>
 </div>
