@@ -30,9 +30,9 @@ const sizeMap = {
 };
 
 const typeMap = {
-  primary: 'text-white bg-purple-600 hover:bg-purple-400',
-  secondary: 'text-black bg-gray-200 hover:bg-gray-100',
-  tertiary: 'text-white bg-blue-600 hover:bg-blue-400'
+  primary: 'text-white bg-primary-default hover:bg-primary-accent',
+  secondary: 'text-black bg-secondary-default hover:bg-secondary-accent',
+  tertiary: 'text-white bg-tertiary-default hover:bg-tertiary-accent'
 };
 
 /**
@@ -42,7 +42,7 @@ export const Button = ({ type = 'primary', size = 'medium', label, ...props }: B
   return (
     <button
       type="button"
-      className={['rounded-lg border border-gray-300', sizeMap[size], typeMap[type]].join(' ')}
+      className={['rounded-lg', sizeMap[size], typeMap[type]].join(' ')}
       {...props}
     >
       {label}
