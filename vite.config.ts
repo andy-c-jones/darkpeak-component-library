@@ -13,14 +13,16 @@ export default defineConfig(() => ({
       include: ["src"],
     }),
   ],
+  test: {
+    testMatch: ["**/*.test.tsx", "**/*.test.ts"],
+  },
   build: {
     lib: {
       entry: resolve("src", "index.ts"),
       name: "darkpeak-component-library",
       formats: ["es", "cjs"],
       fileName: (format) =>
-        `darkpeak-component-library.${
-          format === "cjs" ? "cjs" : "es.js"
+        `darkpeak-component-library.${format === "cjs" ? "cjs" : "es.js"
         }`,
     },
     optimizeDeps: {
