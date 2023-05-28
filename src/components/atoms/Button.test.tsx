@@ -1,12 +1,16 @@
 /**
  * @vitest-environment jsdom
  */
+import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
+import { Button } from './Button';
 
-// The two tests marked with concurrent will be run in parallel
-describe('suite', () => {
-  it('test 1', () => {
-    const element = document.createElement('div');
-    expect(element).not.toBeNull();
+describe('Button', () => {
+  it('has a default type of "primary"', async () => {
+    render(<Button label="Button" />);
+
+    let button = await screen.getByRole('button');
+
+    expect(button.className).toContain('bg-purple-600');
   });
 });
