@@ -1,14 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
 
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Nunito', 'sans-serif'],
-      },
+        sans: ['Nunito', 'sans-serif']
+      }
     },
     colors: {
       primary: {
@@ -19,14 +17,13 @@ export default {
         default: '#e7e5e4',
         accent: '#f5f5f4'
       },
-      
       tertiary: {
         default: '#2563eb',
         accent: '#60a5fa'
-      } ,
+      },
       white: '#ffffff',
-      black: '#000000',
+      black: '#000000'
     }
   },
-  plugins: [],
-}
+  plugins: []
+};
