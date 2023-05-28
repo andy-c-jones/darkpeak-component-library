@@ -113,4 +113,28 @@ describe('Button', () => {
 
     expect(button.hasAttribute('disabled')).toBeFalsy();
   });
+
+  it('has a disabled colour of "primary-accent" when type is primary', async () => {
+    render(<Button label="Button" type="primary" disabled />);
+
+    let button = await screen.getByRole('button');
+
+    expect(button.className).toContain('bg-primary-accent');
+  });
+
+  it('has a disabled colour of "secondary-accent" when type is secondary', async () => {
+    render(<Button label="Button" type="secondary" disabled />);
+
+    let button = await screen.getByRole('button');
+
+    expect(button.className).toContain('bg-secondary-accent');
+  });
+
+  it('has a disabled colour of "tertiary-accent" when type is tertiary', async () => {
+    render(<Button label="Button" type="tertiary" disabled />);
+
+    let button = await screen.getByRole('button');
+
+    expect(button.className).toContain('bg-tertiary-accent');
+  });
 });
