@@ -1,7 +1,19 @@
 {
   "name": "darkpeak-component-library",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.2",
+  "description": "description",
+  "author": {
+    "name": "Andrew 'AJ' Jones",
+    "email": "aj@darkpeak.dev"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/andy-c-jones/darkpeak-component-library/"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/andy-c-jones"
+  },
   "type": "module",
   "types": "dist/index.d.ts",
   "exports": {
