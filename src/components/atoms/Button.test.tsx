@@ -6,11 +6,19 @@ import { describe, it, expect } from 'vitest';
 import { Button } from './Button';
 
 describe('Button', () => {
-  it('has a default type of "primary"', async () => {
+  it('has a default type and therefore colour of "primary"', async () => {
     render(<Button label="Button" />);
 
     let button = await screen.getByRole('button');
 
-    expect(button.className).toContain('bg-purple-600');
+    expect(button.className).toContain('bg-primary');
+  });
+
+  it('has a default type and therefore colour of "primary"', async () => {
+    render(<Button label="Button" />);
+
+    let button = await screen.getByRole('button');
+
+    expect(button.className).toContain('bg-primary');
   });
 });
