@@ -33,20 +33,28 @@ const sizeMap = {
   large: 'w-40 h-12'
 };
 
-const typeMap = {
+const colourMap = {
   primary: 'text-white bg-primary-default hover:bg-primary-accent',
   secondary: 'text-black bg-secondary-default hover:bg-secondary-accent',
   tertiary: 'text-white bg-tertiary-default hover:bg-tertiary-accent'
+};
+
+const disabledColourMap = {
+  primary: 'text-white bg-primary-accent',
+  secondary: 'text-black bg-secondary-accent',
+  tertiary: 'text-white bg-tertiary-accent'
 };
 
 /**
  * Primary UI component for user interaction
  */
 export const Button = ({ type = 'primary', size = 'medium', label, ...props }: ButtonProps) => {
+  const colours = props.disabled ? disabledColourMap : colourMap;
+
   return (
     <button
       type="button"
-      className={['rounded-lg', sizeMap[size], typeMap[type]].join(' ')}
+      className={['rounded-lg', sizeMap[size], colours[type]].join(' ')}
       {...props}
     >
       {label}
