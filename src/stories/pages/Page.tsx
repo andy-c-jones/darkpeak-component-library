@@ -12,6 +12,16 @@ export const Page: React.FC = () => {
   return (
     <article>
       <Header
+        logoConfig={{
+          href: '/',
+          src: 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+          alt: 'Google'
+        }}
+        navItems={[
+          { href: '/', label: 'Home' },
+          { href: '/about', label: 'About' },
+          { href: '/contact', label: 'Contact' }
+        ]}
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
         onLogout={() => setUser(undefined)}
