@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > renders without error 1`] = `
+<DocumentFragment>
+  <button
+    class="rounded-lg w-32 h-10 text-white bg-primary-default hover:bg-primary-accent"
+    type="button"
+  >
+    test
+  </button>
+</DocumentFragment>
+`;

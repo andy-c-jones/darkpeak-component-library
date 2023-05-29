@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MainNav > renders without error 1`] = `
+<DocumentFragment>
+  <nav
+    class="flex gap-6 items-center flex-wrap"
+  >
+    <ul
+      class="flex gap-10 grow-0 flex-wrap"
+    />
+  </nav>
+</DocumentFragment>
+`;

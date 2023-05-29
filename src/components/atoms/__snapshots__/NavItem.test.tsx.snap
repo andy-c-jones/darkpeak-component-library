@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NavItem > renders without error 1`] = `
+<DocumentFragment>
+  <li
+    class="nav-item"
+  >
+    <a
+      class="nav-link"
+      href="test"
+    >
+      test
+    </a>
+  </li>
+</DocumentFragment>
+`;
