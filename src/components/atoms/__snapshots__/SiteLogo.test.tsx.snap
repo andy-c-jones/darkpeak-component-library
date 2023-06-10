@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SiteLogo > renders without error 1`] = `
+<DocumentFragment>
+  <a
+    href="test"
+  >
+    <img
+      alt="test"
+      src="test"
+    />
+  </a>
+</DocumentFragment>
+`;

@@ -8,8 +8,8 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
-    layout: 'fullscreen',
-  },
+    layout: 'fullscreen'
+  }
 } satisfies Meta<typeof Header>;
 
 export default meta;
@@ -17,10 +17,33 @@ type Story = StoryObj<typeof meta>;
 
 export const LoggedIn: Story = {
   args: {
-    user: {
-      name: 'Jane Doe',
+    navItems: [
+      { label: 'Home', href: '/' },
+      { label: 'About', href: '/about' },
+      { label: 'Contact', href: '/contact' }
+    ],
+    logoConfig: {
+      href: '/',
+      src: 'https://via.placeholder.com/150x50?text=Logo',
+      alt: 'Logo'
     },
-  },
+    user: {
+      name: 'Jane Doe'
+    }
+  }
 };
 
-export const LoggedOut: Story = {};
+export const LoggedOut: Story = {
+  args: {
+    navItems: [
+      { label: 'Home', href: '/' },
+      { label: 'About', href: '/about' },
+      { label: 'Contact', href: '/contact' }
+    ],
+    logoConfig: {
+      href: '/',
+      src: 'https://via.placeholder.com/150x50?text=Logo',
+      alt: 'Logo'
+    }
+  }
+};

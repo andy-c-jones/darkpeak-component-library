@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header > renders without error 1`] = `
+<DocumentFragment>
+  <header>
+    <div
+      class="flex items-center gap-12 justify-between"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="test"
+          src="test"
+        />
+      </a>
+      <nav
+        class="flex gap-6 items-center flex-wrap"
+      >
+        <ul
+          class="flex gap-10 grow-0 flex-wrap"
+        />
+      </nav>
+      <div
+        class="flex items-center gap-2 "
+      >
+        <button
+          class="rounded-lg w-24 h-8 text-white bg-primary-default hover:bg-primary-accent"
+          type="button"
+        >
+          Log in
+        </button>
+        <button
+          class="rounded-lg w-24 h-8 text-white bg-primary-default hover:bg-primary-accent"
+          type="button"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;
